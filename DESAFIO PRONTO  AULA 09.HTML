@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVIDADE DESAFIO AULA 9</title> 
+    <link rel="stylesheet" href="DESAFIO AULA 09.CSS">
+
+    <style>
+        body {
+            background-color: #f3e7fe;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-weight: 400;
+            text-align: center;
+            padding: 16px;
+            text-transform: uppercase;
+        }
+
+        .cards_container {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #300559;
+            color: #ffffff;
+            padding: 16px;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            width: calc(33.33% - 16px); 
+            border: 5px solid black;
+        }
+
+        img.tamanho {
+            display: block;
+            height: 80%;
+            width: 100%;
+        }
+
+        /* Menor ou igual a 800px */
+        @media (max-width: 800px) {
+            .cards_container {
+                justify-content: center; 
+                flex-direction: column;
+            }
+            .card {
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>RESPONSIVIDADE</h1>
+        <section class="cards_container">
+            <div class="card">
+                <img class="tamanho" src="IMAGEM DESAFIO 09\IMAGEM 01.jpeg" alt="LEOPARDO">
+                <p>LEOPARDO NA SAVANA AFRICANA</p>
+            </div>
+            <div class="card">
+                <img class="tamanho" src="IMAGEM DESAFIO 09\IMAGEM 02.jpeg" alt="ELEFANTES">
+                <p>ELEFANTA E SEU FILHOTE</p>
+            </div>
+            <div class="card">
+                <img class="tamanho" src="IMAGEM DESAFIO 09\IMAGEM 03.jpeg" alt="TIGRE">
+                <p>O TIGRE EM SEU DESCANSO</p>
+            </div>
+            <div class="card">
+                <img class="tamanho" src="IMAGEM DESAFIO 09\IMAGEM  04.jpeg" alt="LEÃO">
+                <p>LEÃO NA SAVANA AFRICANA</p>
+            </div>
+            <div class="card">
+                <img class="tamanho" src="IMAGEM DESAFIO 09\IMAGEM 05.jpeg" alt="RINOCERONTES">
+                <p>RINOCERONTE E SEU FILHOTE</p>
+            </div>
+            <div class="card">
+                <img class="tamanho" src="IMAGEM DESAFIO 09\IMAGEM 06.jpeg" alt="GAZELAS">
+                <p>GAZELAS PASTANDO</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
